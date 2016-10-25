@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 
+     Student Name: Kulkarni Aaditya Arvind 
+     UTA ID: 1001238152
+     Project Name: A Weather Web Application 
+     Project No.: 1
+     Project due date: 10/19/2016 
+-->
+<html lang="en">
+  <head>
+    <title>A Weather Web Application</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="weather.js"></script>
+  </head>
+  <body onload="initialize();">
+    <form>
+       <label>City: <input type="text" id="form-input" placeholder="Enter the city name"/></label>
+       <input type="button" onclick="sendRequest();" value="Display Info"/>
+    </form>
+    <hr/>
+    <div id="loading-indicator">
+      <img src="ajax-loader.gif" alt="Loading indicator">
+    </div>
+    <div id="output">
+      <ul style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"> 
+         <br>
+         <li id="name"></li>
+         <li id="geo"></li>
+         <li id="sunrise"></li>
+         <li id="sunset"></li>
+         <li id="pressure"></li>
+         <li id="humidity"></li>
+         <li id="temp"></li>
+         <li id="min_temp"></li>
+         <li id="max_temp"></li>
+         <li id="visibility"></li>
+         <li id="clouds"></li>
+         <li id="message"></li>
+         <br>
+      </ul>
+    </div>
+  </body>
+</html>
